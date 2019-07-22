@@ -1,0 +1,255 @@
+.very-specific-design .img, .very-specific-design .bgFooter .reload, .very-specific-design .bgFooter .bgAudio, .very-specific-design .bgFooter .play, .very-specific-design .bgFooter .timeline, .very-specific-design .bgFooter .pause, .very-specific-design .close, .very-specific-design .backIcon, .very-specific-design .nextIcon, .very-specific-design .sound {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: border-box; }
+
+@font-face {
+  font-family: myFirstFont;
+  src: url("../font/SassoonInfantStd.otf"); }
+
+* {
+  font-family: myFirstFont; }
+
+@keyframes loader {
+  0%, 10%, 100% {
+    width: 10px;
+    height: 10px; }
+  65% {
+    width: 80px;
+    height: 80px; } }
+
+@keyframes loaderBlock {
+  0%, 30% {
+    transform: rotate(0); }
+  55% {
+    background-color: #0fa0c5; }
+  100% {
+    transform: rotate(90deg); } }
+
+@keyframes loaderBlockInverse {
+  0%, 20% {
+    transform: rotate(0); }
+  55% {
+    background-color: #0fa0c5; }
+  100% {
+    transform: rotate(-90deg); } }
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%) rotate(45deg) translate3d(0, 0, 0);
+  animation: loader 1.2s infinite ease-in-out; }
+  .loader span {
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #0fa0c5;
+    animation: loaderBlock 1.2s infinite ease-in-out both; }
+    .loader span:nth-child(1) {
+      top: 0;
+      left: 0; }
+    .loader span:nth-child(2) {
+      top: 0;
+      right: 0;
+      animation: loaderBlockInverse 1.2s infinite ease-in-out both; }
+    .loader span:nth-child(3) {
+      bottom: 0;
+      left: 0;
+      animation: loaderBlockInverse 1.2s infinite ease-in-out both; }
+    .loader span:nth-child(4) {
+      bottom: 0;
+      right: 0; }
+
+.very-specific-design {
+  animation: crescendo 0.5s alternate  ease-out;
+  display: none;
+  width: 65%;
+  margin: auto;
+  /* Modal Content */
+  /* The Close Button */ }
+
+@keyframes crescendo {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+  .very-specific-design .pointer {
+    cursor: pointer; }
+  .very-specific-design .fontlisten {
+    color: #537bbd;
+    font-size: 32px;
+    font-weight: 50px; }
+  .very-specific-design .img {
+    background-image: url("../assets/images/audio_icon.png");
+    width: 50px;
+    height: 30px;
+    display: -webkit-inline-box; }
+  .very-specific-design .capitalize {
+    text-transform: capitalize; }
+  .very-specific-design .bgContent {
+    background-color: #537bbd; }
+  .very-specific-design .bgFooter {
+    background-color: #deecf6; }
+    .very-specific-design .bgFooter .reload {
+      background-image: url("../assets/images/replay_icon.png");
+      width: 50px;
+      height: 50px; }
+    .very-specific-design .bgFooter .bgAudio {
+      background-image: url("../assets/images/draggerBG.png");
+      width: 50px;
+      height: 50px; }
+    .very-specific-design .bgFooter .play {
+      background-image: url("../assets/images/play.png");
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      margin-top: 15px; }
+    .very-specific-design .bgFooter .timeline {
+      background-image: url("../assets/images/timeline.png");
+      width: 230px;
+      height: 18px;
+      display: inline-block; }
+    .very-specific-design .bgFooter .pause {
+      background-image: url("../assets/images/pause.png");
+      width: 20px;
+      height: 20px;
+      display: none;
+      margin-top: 15px; }
+  .very-specific-design .content {
+    border-radius: 20px;
+    border-color: #f9a55f;
+    border-style: solid;
+    width: 98%;
+    margin: auto;
+    background-color: white; }
+  .very-specific-design .numberStyle {
+    color: black;
+    font-size: 20px;
+    font-weight: bold; }
+  .very-specific-design .letterStyle {
+    color: #537bbd;
+    font-size: 80px;
+    font-weight: bold; }
+  .very-specific-design .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 65px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Black w/ opacity */ }
+  .very-specific-design .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 61%;
+    border-radius: 20px;
+    border-color: #f9a55f;
+    border-style: solid;
+    height: 63vh; }
+  .very-specific-design .close {
+    background-image: url("../assets/images/close_icon.png");
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+    opacity: 1; }
+  .very-specific-design .backIcon {
+    background-image: url("../assets/images/popupBack.png");
+    width: 50px;
+    height: 50px; }
+  .very-specific-design .nextIcon {
+    background-image: url("../assets/images/popupNext.png");
+    width: 50px;
+    height: 50px; }
+  .very-specific-design .sound {
+    background-image: url("../assets/images/popupAudioIcon.png");
+    width: 50px;
+    height: 50px; }
+  .very-specific-design .heightContent {
+    height: 63vh; }
+  .very-specific-design .formtext {
+    overflow: visible;
+    margin: 10px 0;
+    text-align: center; }
+  .very-specific-design input:focus {
+    outline-color: transparent; }
+  .very-specific-design input[type="range"] {
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    height: 3px;
+    background-color: #f4f5f6;
+    outline-color: transparent;
+    width: 230px;
+    position: relative;
+    bottom: 8px;
+    cursor: pointer; }
+  .very-specific-design input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    width: 16px;
+    height: 16px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #f4f5f6;
+    overflow: visible; }
+
+@-webkit-keyframes slide {
+  100% {
+    left: 0; } }
+
+@keyframes slide {
+  100% {
+    left: 0; } }
+
+@media only screen and (max-width: 1363px) {
+  .very-specific-design {
+    width: 30rem;
+    margin: auto; }
+    .very-specific-design .modal-content {
+      width: 28rem;
+      height: 30rem;
+      margin: auto; }
+  .reload {
+    margin-right: 20px;
+    margin-top: 10px; } }
+
+@media (max-height: 400px) {
+  .very-specific-design {
+    position: relative;
+    bottom: 20px;
+    overflow: hidden; }
+  .very-specific-design .letterStyle {
+    font-size: 20px; }
+  .very-specific-design .numberStyle {
+    font-size: 10px; } }
+
+@media (max-height: 295px) {
+  .very-specific-design {
+    transform: scale(0.6);
+    position: relative;
+    bottom: 40px; } }
+
+@media (max-height: 600px) {
+  .very-specific-design .modal-content {
+    height: 80vh; } }

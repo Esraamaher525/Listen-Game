@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<title>http://www.educationalrc.org/tasks/7/</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body onload="myFunction()">
+	<!-- preloader -->
+	<div id="loader" class="loader">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<!-- main content -->
+	<div id="very-specific-design" class="very-specific-design p-3" >
+		<!-- start div listen -->
+		<div>
+			<div class="img-fluid pointer img" alt="sound image" onclick="playAudio()" title="Listen"></div>
+			<span class="px-2 mt-5 fontlisten capitalize">listen.</span>
+			<audio id="myAudio">
+					<source src="assets/audio/p26_ex14.mp3"  type="audio/mpeg">
+					Your browser does not support the audio element.
+			</audio>
+		</div>
+		<!-- end div listen -->
+		<!-- start content div -->
+		 <div class="bgContent heightContent" id="content"> 
+			<div class="content row heightContent">
+				<div class="col-6 my-auto">
+					<div class="row justify-content-center">
+					<div class="numberStyle py-4">1</div>
+					<div class="letterStyle pointer" id="letterD">d</div>
+					<!-- start model letter d -->
+					     <div id="myModalD" class="modal">
+
+							<!-- Modal content -->
+							<div class="modal-content">
+							  <div class="close ml-auto" id="closeD" onclick="closeD()"></div>
+							  <div class="row my-auto">
+								  <div class="backIcon col-4 img-responsive pointer" onclick="getN()" >
+								  </div>
+								  	<div class="col-4 text-center">
+										<div class="numberStyle align-top d-inline">1</div>
+										<div class="letterStyle pointer d-inline col" id="letterD">d</div>
+									</div>
+								  <div class="nextIcon float-right img-responsive ml-auto pointer" onclick="getI()">
+									  <!-- <img src="./assets/images/popupNext.png"> -->
+								  </div>
+
+							  </div>
+							  <div class="row justify-content-center">
+								   <div class="sound pointer" onclick="playAudioD()"></div>
+								   <audio id="audioD">
+										<source src="assets/audio/p26_ex14_1.mp3"  type="audio/mpeg">
+										Your browser does not support the audio element.
+								</audio>
+							   </div>
+							</div>
+						  
+						  </div>
+						  <!-- end modal letter d -->
+						 
+
+
+				   </div>
+				</div>
+				<div class="col-6  my-auto">
+					<div class="row justify-content-center">
+					<div class="numberStyle  py-4">3</div>
+					<div class="letterStyle pointer" id="letterM">m</div>
+					 <!-- start modal letter m -->
+					 <div id="myModalM" class="modal">
+
+							<!-- Modal content -->
+							<div class="modal-content">
+							  <div class="close ml-auto" id="closeM"  onclick="closeM()"></div>
+							  <div class="row my-auto">
+								  <div class="backIcon col-4 img-responsive pointer" onclick="getI()">
+								  </div>
+									  <div class="col-4 text-center">
+										<div class="numberStyle align-top d-inline">3</div>
+										<div class="letterStyle pointer d-inline col" id="letterM">m</div>
+									</div>
+								  <div class="nextIcon float-right img-responsive ml-auto pointer" onclick="getN()">
+									  <!-- <img src="./assets/images/popupNext.png"> -->
+								  </div>
+
+							  </div>
+							  <div class="row justify-content-center">
+								   <div class="sound pointer" onclick="playAudioM()"></div>
+								   <audio id="audioM">
+										<source src="assets/audio/p26_ex14_3.mp3"  type="audio/mpeg">
+										Your browser does not support the audio element.
+								</audio>
+							   </div>
+							</div>
+						  
+						  </div>
+						  <!-- end modal letter m -->
+					</div>
+				</div>
+				<div class="col-6">
+						<div class="row justify-content-center">
+						<div class="numberStyle py-4">2</div>
+						<div class="letterStyle pointer"  id="letterI">i</div>
+							 <!-- start modal letter I -->
+							 <div id="myModalI" class="modal">
+
+								<!-- Modal content -->
+								<div class="modal-content">
+								  <div class="close ml-auto" id="closeI" onclick="closeI()"></div>
+								  <div class="row my-auto">
+									  <div class="backIcon col-4 img-responsive pointer" onclick="getD()">
+									  </div>
+										  <div class="col-4 text-center">
+											<div class="numberStyle align-top d-inline">2</div>
+											<div class="letterStyle pointer d-inline col" id="letterI">i</div>
+										</div>
+									  <div class="nextIcon float-right img-responsive ml-auto pointer" onclick="getM()">
+										  <!-- <img src="./assets/images/popupNext.png"> -->
+									  </div>
+	
+								  </div>
+								  <div class="row justify-content-center">
+									   <div class="sound pointer" onclick="playAudioI()"></div>
+									   <audio id="audioI">
+											<source src="assets/audio/p26_ex14_2.mp3"  type="audio/mpeg">
+											Your browser does not support the audio element.
+									</audio>
+								   </div>
+								</div>
+							  
+							  </div>
+							  <!-- end modal letter m -->
+						</div>
+				</div>
+				<div class="col-6">
+						<div class="row justify-content-center">
+						<div class="numberStyle py-4">4</div>
+						<div class="letterStyle pointer" id="letterN">n</div>
+						 <!-- start modal letter I -->
+						 <div id="myModalN" class="modal">
+							<!-- Modal content -->
+							<div class="modal-content">
+								<div class="close ml-auto" id="closeN"  onclick="closeN()"></div>
+								<div class="row my-auto">
+									<div class="backIcon col-4 img-responsive pointer" onclick="getM()">
+									</div>
+										<div class="col-4 text-center">
+										  <div class="numberStyle align-top d-inline">4</div>
+										  <div class="letterStyle pointer d-inline col" id="letterN">n</div>
+									  </div>
+									<div class="nextIcon float-right img-responsive ml-auto pointer" onclick="getD()">
+										<!-- <img src="./assets/images/popupNext.png"> -->
+									</div>
+  
+								</div>
+								<div class="row justify-content-center">
+									 <div class="sound pointer" onclick="playAudioN()"></div>
+									 <audio id="audioN">
+										  <source src="assets/audio/p26_ex14_4.mp3"  type="audio/mpeg">
+										  Your browser does not support the audio element.
+								  </audio>
+								 </div>
+							  </div>
+							
+							</div>
+							<!-- end modal letter m -->
+						</div>
+				</div>
+			</div>
+
+		 </div> 
+		<!-- end content div -->
+		<!-- start footer  -->
+		<div class="bgFooter">
+			<div class="p-2 px-5 row">
+				<div class="reload col-1 pointer" onclick="reload()" title="reload"></div>
+				<div class="bgAudio col">
+						<div class="play pointer" onclick="playAudioAll()" id="play">
+							
+						</div>
+						<div class="pause pointer" id="pause" onclick="pauseaudio()"></div>
+						<div class="timeline formtext">
+								<input type="range" min="0" max="100" value="0" class="slider" id="$seekbar" step="0.1">  
+								
+							
+						</div>
+	
+	
+					</div>
+			</div>
+		
+					<audio id="$audio">
+							<source src="assets/audio/p26_ex14q1.mp3" type="audio/mpeg">
+						  Your browser does not support the audio element.
+					</audio>
+			</div>
+			
+	
+
+		</div>
+		<!-- end footer -->
+
+	  <script type="text/javascript" src="javascript/javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+// mixin for font
+@mixin font-style($font-size,$font-weight,$color:black) {
+    color:$color;
+    font-size: $font-size;
+    font-weight: $font-weight;   
+}
+// mixin for image
+@mixin img($url,$width,$height) {
+    background-image: url($url);
+    width:$width;
+    height:$height ;
+}
+%img-bg{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-clip: border-box;
+}
+// mixin background
+@mixin bg($color) {
+    background-color: $color;
+}
